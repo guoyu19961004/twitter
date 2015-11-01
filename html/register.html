@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册 Twitter</title>
+	<link rel="stylesheet" href="../font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/register.css">
+</head>
+<body onLoad="document.forms.register.name.focus();getData();" >
+	<div id="nav">
+		<div class="container">
+			<div class="wrap">
+				<div class="re">
+					<div class="home" id="home">
+						<a href="index.html" class="icon">
+							<i class="fa fa-twitter fa-1x"></i>
+						</a>
+						<div class="black-span" id="black-span">
+							<div class="angle"></div>
+							<p>主页</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul>
+				<li class="language">
+					<p>
+						<a onclick="toggleMenu();" href="#"><small>语言：</small>简体中文</a>
+						<span class="angle"></span>
+					</p>
+					<div class="lan-wrap" id="support-language">
+						<div class="angle">
+							<span class="outer"></span>
+							<span class="inner"></span>
+						</div>
+						<ul>
+							<li><a href="">繁体中文</a></li>
+							<li><a href="">日本语</a></li>
+							<li><a href="">English</a></li>
+							<li><a href="">法语</a></li>
+							<li><a href="">意大利语</a></li>
+							<li><a href="">德语</a></li>
+						</ul>
+					</div>
+				</li>
+			<li class="login">
+				<p>
+					<a onclick="toggleLogin();" href="#"><small>已有账号？</small>登陆</a>
+					<span class="angle"></span>
+				</p>
+				<div class="form-wrap" id="login-form" onclick="hehe();">
+						<div class="angle">
+							<span class="outer"></span>
+							<span class="inner"></span>
+						</div>
+						<div class="login" >
+							<h2>已有账号？</h2>
+							<form action="#" method="post" name="login">
+								<input type="text" placeholder="手机、邮件地址或者用户名" class="username text" name="name">
+								<input type="password" placeholder="密码" class="password text" name="password">
+								<input type="checkbox" style="cursor:pointer;" name="remeber" value="true"><span>记住我 ·</span><a href="">忘记密码？</a>
+								<button onclick="return loginCheck();">登录</button>
+							</form>
+							<h2 class="use">首次使用 Twitter？</h2>
+							<button class="zhuce">注册</button>
+						</div>
+					</div>
+			</li>
+			</ul>
+		</div>
+	</div>
+	<div id="register" onclick="hide();">
+		<div class="max-wrap">
+			<div class="width-wrap">
+				<h1>现在就加入 Twitter。</h1>
+				<form action="" name="register" mathod="post">
+					<div class="input-wrap">
+						<input type="text" class="text" name="name" placeholder="全名" oninput="nameCheck();" value="" id="username" onfocus="allHide(document.getElementById('form-name'));" onpropertychange="nameCheck();">
+						<div class="slide-tip" id="form-name">
+							<p class="ok">&nbsp;</p>
+							<p class="error">你的名字是什么？</p>
+							<p class="error">你的名字包含特殊字符。</p>
+							<p class="error">你的全名不能包含 “Twitter” 这个单词。</p>
+						</div>
+					</div>
+					<div class="input-wrap">
+						<input type="text" class="text" name="email" placeholder="手机或邮件" value="" id="ep" onfocus="allHide(document.getElementById('form-ep'));" oninput="epCheck();" onpropertychange="epCheck();">
+						<div class="slide-tip" id="form-ep">
+							<p class="ok">&nbsp;</p>
+							<p class="checking">正在验证...</p>
+							<p class="error">请输入有效的邮箱地址。</p>
+							<p class="error">请输入有效的手机号码。</p>
+							<p class="error">请输入有效的手机号码或邮箱地址。</p>
+							<p class="error">该邮件地址已被注册。想要<a href="index.heml">登录</a>或<a href="">恢复密码</a>吗？</p>
+							<p class="error">我们目前无法注册此电话号码。请尝试使用邮箱注册。</p>
+						</div>
+						<div id="phone-information">我们将会向该号码发送一个验证码，可能收取标准信息费。</div>
+					</div>
+					<div class="input-wrap" >
+					<input type="password" class="text" name="password" placeholder="密码" value="" id="pass" onfocus="allHide(document.getElementById('form-pass'));" oninput="passCheck();" onpropertychange="passCheck();">
+						<div class="slide-tip" id="form-pass">
+							<p class="ok">&nbsp;</p>
+							<p class="error">你的密码必须至少包含六个字符。</p>
+							<p class="error">请输入密码。</p>
+							<p class="error">请输入一个更强的密码。</p>
+						</div>
+						<div class="bar">
+							<div class="outer" id="progress-bar"></div>
+						</div>
+					</div>
+					<input type="checkbox" checked="checked">
+					<span>基于我最近访问的网站来定制Twitter。</span>
+					<a href="">了解更多</a>
+					<button onclick="return status;">注册</button>
+				</form>
+				<p>注册意味着你同意<a href="">服务条款</a>与<a href="">隐私政策</a>，包括 <a href="">Cookie 使用条款</a> 。其他用户将可以通过你所提供的邮件地址或手机号码找到你。</p>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript" src="../js/register.js"></script>
+</body>
+</html>

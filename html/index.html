@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎来到 Twitter - 登陆或者注册</title>
+	<link rel="stylesheet" href="../font-awesome-4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<div id="nav">
+		<div class="wrap">
+			<ul class="left-part" >
+				<li class="home" id="home">
+					<a href="">
+						<i class="fa fa-twitter fa-1x"></i>
+						<span>主页</span>
+					</a>
+					<div class="black-span" id="black-span">
+						<div class="angle"></div>
+						<p>主页</p>
+					</div>
+				</li>
+				<li class="about"><a href=""><span>关于</span></a></li>
+			</ul>
+			<div class="right-part">
+				<p>
+					<a onclick="toggleMenu();" href="#"><small>语言：</small>简体中文</a>
+					<span class="angle"></span>
+				</p>
+				<div class="lan-wrap" id="support-language">
+					<div class="angle">
+						<span class="outer"></span>
+						<span class="inner"></span>
+					</div>
+					<ul>
+						<li><a href="">繁体中文</a></li>
+						<li><a href="">日本语</a></li>
+						<li><a href="">English</a></li>
+						<li><a href="">法语</a></li>
+						<li><a href="">意大利语</a></li>
+						<li><a href="">德语</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-img" onclick="hideMenu();" id="bg-img">
+		<img src="../images/USCA7.jpg" class="on">
+		<img src="../images/USCA4.jpg">
+		<img src="../images/USCA6.jpg">
+	</div>
+	<div id="container">
+		<div class="head">
+			<h1>欢迎使用 Twitter。</h1>
+			<h2>联系你的好友和更多精彩。获取你感兴趣的实时更新。并通过每个视角观看事件实时呈现。</h2>
+		</div>
+		<div class="form">
+			<div class="login">
+				<form action="home.html" method="post" name="login">
+					<input type="text" placeholder="手机、邮件地址或者用户名" class="username text" name="name">
+					<input type="password" placeholder="密码" class="password text" name="password">
+					<button onclick="return loginCheck();">登陆</button>
+					<input type="checkbox" style="cursor:pointer;" name="remeber" value="true"><span>记住我 ·</span><a href="">忘记密码？</a>
+				</form>
+			</div>
+			<div class="register">
+				<h2><span>新来 Twitter？</span>注册</h2>
+				<form action="" method="get" name="register">
+					<input type="text" class="text" name="name" placeholder="全名">
+					<input type="text" class="text" name="email" placeholder="邮箱">
+					<input type="password" class="text" name="password" placeholder="密码">
+					<button onclick="return registerCheck();">注册 Twitter</button>
+				</form>
+			</div>
+		</div>
+		<div class="text">
+			<ul id="text-list">
+				<li class="on">
+					<p class="introduct"><a href="/NBA/status/560319834135998464">.@ChicagoBulls outlast @Warriors in a dramatic finish,113-111. D-Rose overcomes TOs, nails game-winning jumper.</a></p>
+					<p><a href="">由 <span class="dir">@NBA</span> 拍摄发布</a></p>
+					<p><a href="" class="dir">11:13 PM - 27 Jan 2015</a></p>
+				</li>
+				<li>
+					<p class="introduct"><a href="">#2014 Flashback: Paying tribute to the late + great Lou Reed. @TheGRAMMYs  #NFTO</a></p>
+					<p><a href="">由 <span class="dir">@JaredLeto</span> 拍摄发布</a></p>
+					<p><a href="">12:40 AM - 30 Dec 2014</a></p>
+				</li>
+				<li>
+					<p class="introduct"><a href="">Sums up this weekend.</a></p>
+					<p><a href="">由 <span class="dir">@sanarao</span> 拍摄发布</a></p>
+					<p><a href="">07:05 PM - 9 Nov 2014</a></p>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="">关于</a></li>
+				<li><a href="">帮助</a></li>
+				<li><a href="">博客</a></li>
+				<li><a href="">状态</a></li>
+				<li><a href="">工作机会</a></li>
+				<li><a href="">条款</a></li>
+				<li><a href="">隐私</a></li>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">广告信息</a></li>
+				<li><a href="">商标</a></li>
+				<li><a href="">广告</a></li>
+				<li><a href="">企业</a></li>
+				<li><a href="">媒体</a></li>
+				<li><a href="">开发者</a></li>
+				<li><a href="">目录</a></li>
+				<li>@2015 Twitter</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
